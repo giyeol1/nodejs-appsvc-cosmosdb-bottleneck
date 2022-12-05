@@ -10,11 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  webAppName: 'gytest'
-  serviceConnection: 'github.com_giyeol1'
-  azureSubscriptionId: 'gy.ryu'
-  loadTestResource: 'F21 LoadTest1'
-  loadTestResourceGroup: 'master'
+  webAppName: 'F21LoadTest'
+  serviceConnection: 'F21LoadTestRM'
+  azureSubscriptionId: 'Azure 구독 1'
+  loadTestResource: 'AzureLoadTest1'
+  loadTestResourceGroup: 'AzureLoadTest1'
   location: 'EAST US'
 
 
