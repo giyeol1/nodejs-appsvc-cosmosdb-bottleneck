@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  webAppName: 'AzureLoadTest'
+  webAppName: 'gytest'
   serviceConnection: 'F21LoadTestRM'
   azureSubscriptionId: 'Azure 구독 1'
   loadTestResource: 'F21LoadTesting2'
@@ -141,7 +141,20 @@ stages:
         csmParametersFile: '$(System.DefaultWorkingDirectory)/ARMTemplate/parameters.json'
         overrideParameters: '-name $(loadTestResource) -location "$(location)"'
         deploymentMode: 'Incremental'    
-
+    
+    - task: AzureLoadTest@1
+      inputs:
+        azureSubscription: $(serviceConnection)
+        loadTestConfigFile: 'SampleApp.yaml'
+        resourceGroup: $(loadTestResourceGroup)
+        loadTestResource: $()
+        env: |
+          [
+            {
+            "name": "webapp",
+            "value": "$(webAppName).azurewebsites.net"
+            }
+          ]
           
     - publish: $(System.DefaultWorkingDirectory)/loadTest
       artifact: results
