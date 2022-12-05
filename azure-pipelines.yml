@@ -13,7 +13,7 @@ variables:
   webAppName: 'AzureLoadTest'
   serviceConnection: 'F21LoadTestRM'
   azureSubscriptionId: 'Azure 구독 1'
-  loadTestResource: 'F21LoadTesting2'
+  loadTestResource: 
   loadTestResourceGroup: 'AzureLoadTest1'
   location: 'EAST US'
 
