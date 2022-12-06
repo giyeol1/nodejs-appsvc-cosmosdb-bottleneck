@@ -17,6 +17,8 @@ variables:
   loadTestResourceGroup: 'AzureLoadTest1'
   location: 'EAST US'
 
+
+stages:
 - stage: LoadTest
   displayName: Load Test
   dependsOn: Deploy
