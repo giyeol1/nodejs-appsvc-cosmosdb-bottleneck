@@ -10,9 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  webAppName: 'webapp'
-  serviceConnection: 'LoadTestConn'
-  azureSubscriptionId: 'ork0126-F21_LOADTEST-0b95daf5-3923-4266-a0fa-253654a3c5be'
+  webAppName: 'AzureLoadTest'
+  serviceConnection: 'F21LoadTestRM'
+  azureSubscriptionId: 'Azure 구독 1'
+  loadTestResource: 'F21_LOADTEST'
   loadTestResourceGroup: 'AzureLoadTest1'
   location: 'EAST US'
 
