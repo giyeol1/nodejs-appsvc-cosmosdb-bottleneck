@@ -14,7 +14,7 @@ variables:
   serviceConnection: 'F21LoadTestRM'
   azureSubscriptionId: 'Azure 구독 1'
   loadTestResource: 'AzureLoadTest1'
-  loadTestResourceGroup: 'AzureLoadTest1'
+  loadTestResourceGroup: 'cloud-shell-storage-southeastasia'
   location: 'EAST US'
 
 
