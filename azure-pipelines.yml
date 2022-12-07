@@ -12,8 +12,8 @@ pool:
 variables:
   webAppName: 'AzureLoadTest'
   serviceConnection: 'F21LoadTestRM'
-  azureSubscriptionId: 'Azure 구독 1'
-  loadTestResource: 'F21_LOADTEST'
+  azureSubscriptionId: '0b95daf5-3923-4266-a0fa-253654a3c5be'
+  loadTestResource: 'gytest1'
   loadTestResourceGroup: 'AzureLoadTest1'
   location: 'EAST US'
 
