@@ -13,7 +13,7 @@ variables:
   webAppName: 'AzureLoadTest'
   serviceConnection: 'F21LoadTestRM'
   azureSubscriptionId: '0b95daf5-3923-4266-a0fa-253654a3c5be'
-  loadTestResource: 'gytest1'
+  loadTestResource: 'LoadTesting100'
   loadTestResourceGroup: 'AzureLoadTest1'
   location: 'EAST US'
 
@@ -147,7 +147,7 @@ stages:
         azureSubscription: $(serviceConnection)
         loadTestConfigFile: 'SampleApp.yaml'
         resourceGroup: $(loadTestResourceGroup)
-        loadTestResource: $()
+        loadTestResource: $(loadTestResource)
         env: |
           [
             {
