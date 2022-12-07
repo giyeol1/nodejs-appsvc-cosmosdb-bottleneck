@@ -1,0 +1,9 @@
+﻿sweater,Activewear,Shoes
+bottoms_pants,Shoes,sweater
+Shoes,bottoms_pants,dress
+Activewear,sweater,bottoms_pants
+dress,plus_size-tops,top_blouses
+top_blouses,ACC_Jewelry,plus_size-tops
+outerwear_coats-and-jackets,outerwear_coats-and-jackets,ACC_Jewelry
+plus_size-tops,dress,outerwear_coats-and-jackets
+ACC_Jewelry,top_blouses,Activewear
