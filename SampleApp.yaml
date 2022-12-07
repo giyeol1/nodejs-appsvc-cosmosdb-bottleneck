@@ -1,5 +1,9 @@
-version: v0.1
-testName: SampleAppTest
-testPlan: SampleApp.jmx
-description: 'SampleApp Test Run'
+version: v1.0
+testName: gyF21LoadTest1
+testPlan: F21PerformanceTest_Jun03_gytest_7.jmx
+description: ''
 engineInstances: 1
+splitAllCSVs: True
+configurationFiles:
+- Category1.csv
+failureCriteria: []
